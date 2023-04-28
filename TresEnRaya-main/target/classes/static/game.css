@@ -1,0 +1,76 @@
+  
+  body{
+    background-color: #ccefe3;
+
+  }
+
+  body.dark{
+    background-color:  #282c34;
+    color: white;
+  }
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 50px;
+    display: none;
+  }
+  
+  td {
+    border: 2px solid black;
+    width: 100px; 
+    height: 100px; 
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  td.dark{
+    border: 2px solid white;
+    width: 100px; 
+    height: 100px; 
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  td:hover {
+    background-color: #eee;
+  }
+  
+  td.winner {
+    background-color: #ffd700;
+    color: #fff;
+  }
+
+  .player1-turn {
+    border-bottom: 3px solid blue;
+    width: 200px;
+  }
+  
+  .player2-turn {
+    border-bottom: 3px solid blue;
+    width: 200px;
+  }
+
+  #players {
+    display: flex;
+    justify-content: space-between;
+     width: 500px; /*ajustar según el tamaño del tablero */
+    margin: auto;
+  }
+  
+  #player1, #player2 {
+    margin: 0;
+    width: 120px; /* Ajustar según el tamaño deseado */
+    text-align: center;
+  }
+
+
+  #name-inputs{
+    /* border: solid 1px red; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }

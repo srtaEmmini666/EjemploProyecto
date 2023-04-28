@@ -1,0 +1,110 @@
+.menu a{
+    padding: 2rem;
+    width: inherit;
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    transition: all 0.25s ease-in-out; /*transici'on al mostrar las secciones*/
+    }
+    
+    .menu a:hover{
+    font-weight: bold;
+    color: black;
+    background-color: #25a495;
+    font-size: 1.1rem;
+    }
+    
+    .boton{
+        z-index: 999;
+        position: fixed;
+    }
+
+    .panel{
+    position: fixed;
+    z-index: 998;
+    background-color: teal;
+    top: 0px;
+    max-width: 20%;
+    min-width: 250px;
+    height: 100%;
+    transform: translate(-110%,0%);/*hace que el menu aparezca de arriba hacia abajo*/
+    transition: transform .3s ease;/*hace que lo haga con una transicion, suavemente*/
+    }
+
+    .panel.dark{
+        position: fixed;
+        z-index: 998;
+        background-color: rgb(73, 73, 96);
+        top: 0px;
+        max-width: 20%;
+        min-width: 250px;
+        height: 100%;
+        transform: translate(-110%,0%);/*hace que el menu aparezca de arriba hacia abajo*/
+        transition: transform .3s ease;/*hace que lo haga con una transicion, suavemente*/
+        }
+
+    
+    .panel.is-active{
+        transform: translate(0,0);
+    }
+
+
+.boton{
+    position: fixed;
+    background: url(btnBlanco.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border: none;
+    z-index: 1000;
+    top: 7px;
+    transition: all .2s;
+}
+
+
+.boton:hover{
+    position: fixed;
+    background: url(btnBlanco.png);
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    border: none;
+    z-index: 1000;
+    top: 0px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+
+
+#btnDarkMode{
+    border: none;
+    border-radius: 5px;
+    background-color: #282c34;
+    color: white;
+    padding: 5px;
+    transition: all .1s;
+}
+
+#btnDarkMode:hover{
+    border: none;
+    border-radius: 5px;
+    background-color: #282c34;
+    color: white;
+    padding: 5px;
+    box-shadow: 0 0 5px white;
+    padding: 10px;
+    transition: all .1s;
+}
+
+#btnDarkMode.dark{
+    border: none;
+    border-radius: 5px;
+    background-color: #ccefe3;
+    color: black;
+    padding: 5px;
+    transition: all .1s;
+}
+
+
